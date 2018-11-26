@@ -30,8 +30,10 @@
     "webpack": "^4.26.1"
   },
   "dependencies": {
+    "@material-ui/core": "^3.5.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "source-map-support": "^0.5.9"
+    "source-map-support": "^0.5.9",
+    "typeface-roboto": "^0.0.54"
   }
 }

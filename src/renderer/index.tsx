@@ -1,14 +1,17 @@
 import * as React from 'react';
 import { render } from 'react-dom';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import App from './app/App';
 
-class App extends React.Component {
+class Index extends React.Component {
   render() {
     return (
-      <div>
-        <p>hello world</p>
-      </div>
+      <React.Fragment>
+        <CssBaseline />
+        <App />
+      </React.Fragment>
     );
   }
 }
 
-render(<App />, document.getElementById('app'));
+render(<Index />, document.getElementById('app'));
