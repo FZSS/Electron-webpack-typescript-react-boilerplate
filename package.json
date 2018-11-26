@@ -1,0 +1,37 @@
+{
+  "name": "proxy-generator",
+  "version": "1.0.0",
+  "description": "unnamed proxy generator",
+  "author": "@fzss_",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "dev": "electron-webpack dev",
+    "compile": "electron-webpack",
+    "dist": "yarn compile && electron-builder"
+  },
+  "build": {
+    "appId": "proxy.generator",
+    "mac": {
+      "category": "damn.son.category.type"
+    }
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.0.0",
+    "@types/react": "^16.7.7",
+    "@types/react-dom": "^16.0.10",
+    "electron": "^3.0.10",
+    "electron-builder": "^20.36.2",
+    "electron-webpack": "^2.6.1",
+    "electron-webpack-ts": "^3.1.0",
+    "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "typescript": "^3.1.6",
+    "webpack": "^4.26.1"
+  },
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "source-map-support": "^0.5.9"
+  }
+}

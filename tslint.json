@@ -1,0 +1,51 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-config-airbnb"
+  ],
+  "rules": {
+    "no-unused-variable": true,
+    "jsx-space-before-trailing-slash": true,
+    // Redux dispatch functions overshadow the original imported action creator functions, which are never used thus okay
+    "no-shadowed-variable": false,
+    // It's okay our keys are not sorted in alphabetical order
+    "object-literal-sort-keys": false,
+    // It's okay that we use type and interface at our own discretion
+    "interface-over-type-literal": false,
+    // We should be able to rename import at our own discretion
+    "import-name": false,
+    // Only alphabetical order is tedious and not worth it
+    "ordered-imports": false,
+    "interface-name": [
+      true,
+      "never-prefix"
+    ],
+    // Fields should come before static methods
+    "member-ordering": [
+      true,
+      {
+        "order": "fields-first"
+      }
+    ],
+    // Arrow key function are good in React e.g. no need to bind this
+    "arrow-return-shorthand": true,
+    "only-arrow-functions": true,
+    // It's too tedious to implement this now, but we should make methods private when necessary
+    "member-access": false,
+    "max-line-length": [
+      true,
+      {
+        "limit": 140,
+        "ignore-pattern": "^import |^export {(.*?)}"
+      }
+    ],
+    "array-type": [
+      true,
+      "array"
+    ],
+    "variable-name": [
+      true,
+      "allow-pascal-case"
+    ]
+  }
+}
